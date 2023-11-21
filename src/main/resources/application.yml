@@ -1,0 +1,19 @@
+server:
+  port: 8081
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/demo
+    username: root
+    password: Dev@#9098
+  hikari:
+    connectionTimeout: 30000
+    maximumPoolSize: 5
+  jpa:
+    database-platform: org.hibernate.dialect.MySQLDialect
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  endpoint:
+    health:
+      show-details: always
+
